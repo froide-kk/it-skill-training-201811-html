@@ -1,0 +1,133 @@
+// 照明機器販売実績
+.main-title {
+  color: $maincolor;
+  font-size: 22px;
+
+  @media #{$pc} {
+    padding-top: 57px;
+  }
+
+  @media #{$sp} {
+    padding-top: 20px;
+  }
+}
+
+.title-line {
+  width: 45px;
+  height: 2px;
+  background-color: $maincolor;
+  opacity: 0.1;
+
+  @media #{$pc} {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media #{$sp} {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.history-text {
+  color: $maincolor;
+  font-size: 16px;
+
+  @media #{$pc} {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    @media #{$pc} {
+      width: 360px;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  li {
+    border-bottom: 1px solid rgba(34, 32, 77, 0.1);
+
+    &:first-child {
+      @media #{$pc} {
+        border-top: 1px solid rgba(34, 32, 77, 0.1);
+      }
+    }
+
+    padding: 5px 0px 5px 0px;
+  }
+}
+
+.bottom-history-text {
+  text-align: right;
+  border-bottom: 1px solid rgba(34, 32, 77, 0.1);
+
+  @media #{$pc} {
+    font-size: 16px;
+    padding: 55px 0px 55px 0px;
+  }
+
+  @media #{$sp} {
+    padding: 5px 0px;
+  }
+}
+
+.illumination {
+  @media #{$pc} {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  border-bottom: 1px solid rgba(34, 32, 77, 0.1);
+}
+
+.illumination-text {
+  @media #{$pc} {
+    display: block;
+    width: 580px;
+    margin-right: 40px;
+  }
+}
+
+.sub-title {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.sub-text {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.large-img {
+  @media #{$sp} {
+    display: none;
+  }
+
+  img {
+    @media #{$pc} {
+      width: 580px;
+      padding-top: 57px;
+    }
+  }
+}
+
+.large-imag-text {
+  padding-bottom: 10px;
+}
+
+.small-img {
+  @media #{$pc} {
+    display: flex;
+    max-width: 580px;
+  }
+
+  @media #{$sp} {
+    padding-bottom: 20px;
+  }
+}

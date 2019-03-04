@@ -1,0 +1,235 @@
+.top-heading {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 35px;
+
+  @media #{$sp} {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+  h3 {
+    width: 280px;
+    height: 29px;
+    font-family: HiraKakuPro-W3;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.93;
+    letter-spacing: normal;
+    text-align: left;
+    color: $maincolor;
+    margin-top: 16px;
+    padding-left: 18px;
+  }
+}
+
+.sale-concept {
+  @media #{$pc} {
+    line-height: 1.75;
+    margin-bottom: 47px;
+  }
+
+  @media #{$sp} {
+    margin: 10px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.sale-light {
+  font-size: 24px;
+  padding-top: 30px;
+
+  @media #{$sp} {
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+}
+
+.sale-light-media {
+  display: flex;
+
+  @media #{$sp} {
+    flex-flow: column;
+    padding-bottom: 10px;
+  }
+}
+
+.sale-light-text {
+  padding-top: 30px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  line-height: 1.75;
+
+  @media #{$sp} {
+    margin: 0 10px 20px 10px;
+  }
+
+  hr {
+    width: 45px;
+    margin-left: 0;
+    margin-bottom: 34px;
+    margin-top: -15px;
+  }
+
+  a {
+    margin-top: 30px;
+  }
+
+  p {
+    @media #{$sp} {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.sale-btn {
+  width: 150px;
+  height: 40px;
+  text-decoration: none;
+  color: black;
+  border: solid 1px;
+  padding: 8px 24px;
+
+  @media #{$sp} {
+    margin-left: 10px;
+  }
+}
+
+.light-image {
+  @media #{$sp} {
+    padding: 0 10px;
+  }
+
+  @media #{$pc} {
+    margin-left: 32px;
+    width: 400px;
+    height: 300px;
+  }
+}
+
+hr {
+  opacity: 0.1;
+  height: 2px;
+}
+
+.sale-maker {
+  @media #{$pc} {
+    margin-bottom: 100px;
+  }
+}
+
+.sale-maker-text {
+  @media #{$pc} {
+    font-size: 24px;
+    padding-top: 72px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  @media #{$sp} {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  hr {
+    width: 45px;
+    margin-left: 0;
+    opacity: 0.1;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.sale-maker-text h2:after {
+  width: 145px;
+  content: "";
+  border-bottom: 1px solid #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  margin: auto;
+}
+
+.sale-maker-banner {
+  @media #{$pc} {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media #{$sp} {
+    flex-flow: column;
+    text-align: center;
+    height: 1300px;
+
+    img {
+      padding-bottom: 5px;
+      width: 350px;
+    }
+  }
+
+  a {
+    margin-right: 1vw;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.sale-item {
+  padding: 25px;
+  width: 100%;
+  background-color: #EDEDED;
+  height: 180px;
+  margin-top: 39px;
+
+  @media #{$sp} {
+    height: 150px;
+  }
+
+  h5 {
+    @media #{$pc} {
+      padding-top: 25px;
+      padding-left: 45px;
+      margin-bottom: 25px;
+    }
+
+    @media #{$sp} {
+      padding-left: 25px;
+      padding-bottom: 10px;
+    }
+  }
+
+  p {
+    padding-left: 45px;
+
+    @media #{$sp} {
+      padding-left: 25px;
+    }
+  }
+}
+
+.btn-margin {
+  @media #{$pc} {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media #{$sp} {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

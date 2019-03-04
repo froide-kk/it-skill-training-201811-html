@@ -1,0 +1,173 @@
+// レスポンシブ設定
+$sp: "only screen and (max-width:767px)";
+$pc: "only screen and (min-width:768px)";
+
+// メインカラー
+$maincolor: #1c1a3f;
+$textcolor: #fff;
+
+body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,ul,ol {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary {
+  display: block;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: bottom;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@media #{$pc}{
+  .container {
+    width: 90vw;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media #{$sp}{
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.line-disable {
+  text-decoration: none;
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+/* ==================================
+  共通タイトル
+===================================== */
+.base-title {
+  color: $textcolor;
+  @media #{$sp} {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.base-title-en {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+}
+
+.base-title-ja {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+.base-title-back {
+  background-color: $maincolor;
+  display: flex;
+  align-items: center;
+  @media #{$pc} {
+  height: 100px;
+  }
+}
+
+@media #{$pc} {
+  .base-title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+}
+
+// タイトル右のリンク
+.base-nav {
+  @media #{$pc} {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    li {
+      font-family:HiraKakuPro-W3;
+      margin-right: 20px;
+      padding: 0 15px;
+      a {
+        text-decoration: none;
+        color: $textcolor;
+      }
+    }
+  }
+  @media #{$sp} {
+    display: none;
+  }
+}
+
+// 当該ページリンクのアンダーバー
+.base-profile {
+  border-bottom: solid 2px #a17534;
+}
+
+/* ==================================
+  共通パンくずリスト
+===================================== */
+.base-title-back {
+  background-color: $maincolor;
+}
+
+/* ==================================
+  共通パンくずリスト
+===================================== */
+.base-breadcrumb {
+  background-color: #a17534;
+
+  ul {
+    display: inline-block;
+    padding: 6px;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      font-weight: bold;
+      font-size: 17px;
+      color: $textcolor;
+
+      a {
+        color: $textcolor;
+      }
+
+      &:after {
+        content: "　＞　"
+      }
+    }
+  }
+}
+
+// 最後だけ削除
+.base-breadcrumb ul li:last-child::after {
+  content: none;
+}

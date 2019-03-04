@@ -1,0 +1,8 @@
+@media #{$sp} {
+  .u-hidden-sp{  display: none !important; }
+  .u-visible-pc{ display: none !important; }
+}
+@media #{$pc}{
+  .u-hidden-pc{  display: none !important; }
+  .u-visible-sp{ display: none !important; }
+}

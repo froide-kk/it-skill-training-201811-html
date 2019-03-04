@@ -1,0 +1,142 @@
+/* ==================================
+  共通
+===================================== */
+// 上下中央揃え
+h2,
+h3,
+li {
+  margin: auto 0;
+}
+
+@media #{$pc} {
+  .margin-all {
+    margin-bottom: 58px;
+  }
+}
+
+/* ==================================
+  サブタイトル
+===================================== */
+.pro-sub-title {
+  @media #{$pc} {
+    height: 35px;
+    margin-top: 34px;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2 {
+    @media #{$pc} {
+      font-size: 23px;
+    }
+
+    @media #{$sp} {
+      padding: 5px;
+    }
+
+    color: $maincolor;
+  }
+
+  h3 {
+    @media #{$pc} {
+      font-size: 17px;
+    }
+
+    @media #{$sp} {
+      font-size: 10px;
+    }
+
+    color: $textcolor;
+    background-color: red;
+
+    @media #{$pc} {
+      padding: 12px 15px;
+    }
+
+    @media #{$sp} {
+      padding: 5px;
+    }
+  }
+}
+
+/* ==================================
+  製品テーブル（照明）
+===================================== */
+.pro-illumination {
+  @media #{$pc} {
+    margin-bottom: 32px;
+  }
+
+  @media #{$sp} {
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    background-color: $maincolor;
+    color: $textcolor;
+    font-size: 20px;
+    font-weight: bold;
+
+    @media #{$pc} {
+      padding: 15px;
+    }
+
+    @media #{$sp} {
+      padding: 5px;
+    }
+  }
+}
+
+.pro-illumination-table {
+  display: flex;
+  font-size: 15px;
+  border-bottom: solid 1px #e5e5e5;
+  color: $maincolor;
+
+  h3 {
+    margin-top: 25px;
+    font-weight: bold;
+
+    @media #{$pc} {
+      width: 230px;
+    }
+
+    @media #{$sp} {
+      width: 350px;
+      padding-right: 20px;
+    }
+  }
+
+  ul {
+    width: 820px;
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-right: 20px;
+    }
+  }
+}
+
+.pro-illumination-border {
+  border: solid 2px #e5e5e5;
+  padding: 0 15px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.pro-link {
+  color: $maincolor;
+}
+
+// 最後だけ追加
+.border-bottom-add {
+  border-bottom: solid 2px #e5e5e5;
+}
+
+// 最後だけ削除
+.border-bottom-del {
+  border-bottom: none;
+}

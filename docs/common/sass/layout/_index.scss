@@ -1,0 +1,327 @@
+.break {
+  @media #{$pc} {
+    display: block;
+  }
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.title-area {
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+}
+@media #{$pc} {
+  .title-background-left {
+    background-color: $maincolor;
+    width: calc( calc(100vw - 1920px) / 2);
+    height: 82.857%;
+  }
+  .title-background-right {
+    background-color: $maincolor;
+    width: calc( calc(100vw - 1920px) / 2);
+    height: 82.857%;
+  }
+}
+.title-image {
+  display: flex;
+  max-width: 1920px;
+  position: relative;
+}
+.title-image-left {
+  max-width: 320px;
+  min-height: 96px;
+  background-color: $maincolor;
+  height: 82.857%;
+  width: 16.666vw;
+}
+.title-image-right {
+  width: 83.334vw;
+  max-width: 1600px;
+}
+.title-text {
+  color: $textcolor;
+  position: absolute;
+  @media #{$pc} {
+    left: 5.45%;
+    top: 22%;
+    p {
+      &:first-child {
+        font-family: 'Bahnschrift';
+        font-size: 3.125vw;
+      }
+      &:last-child {
+        font-size: 2.5vw;
+      }
+    }
+  }
+  @media #{$sp} {
+    left: 6vw;
+    top: 2vh;
+    p {
+      &:first-child {
+        font-family: 'Bahnschrift';
+        font-size: 6.25vw;
+      }
+      &:last-child {
+        font-size: 5vw;
+      }
+    }
+  }
+}
+.contents {
+  display: flex;
+  @media #{$pc} {
+    padding-bottom: 6.25vh;
+    margin-top: -6.25vh;
+    justify-content: center;
+    flex-direction: row-reverse;
+    }
+  @media #{$sp} {
+    flex-direction: column;
+  }
+}
+.contents-area-sale {
+  position: relative;
+  margin-left: 30px;
+  @media #{$sp} {
+    margin: 20px 3vw 0;
+  }
+}
+.contents-area-construction {
+  position: relative;
+  margin-right: 30px;
+  @media #{$sp} {
+    margin: 20px 3vw 0;
+  }
+}
+@media #{$pc} {
+  .sale, .construction {
+    display: flex;
+    box-shadow: 0 0 15px rgba(34, 32, 77, 0.15);
+    color: $maincolor;
+  }
+  .sale {
+    flex-direction: column-reverse;
+  }
+  .construction {
+    flex-direction: column;
+    margin-top: 12.5vh;
+  }
+}
+@media #{$sp} {
+  .sale, .construction {
+    display: block;
+    box-shadow: 0 0 15px rgba(34, 32, 77, 0.15);
+    color: $maincolor;
+  }
+}
+.sale-text, .construction-text {
+  background-color: $textcolor;
+  dl {
+    dt {
+      font-weight: bold;
+    }
+  }
+  @media #{$pc} {
+    width: 100%;
+    dl {
+      dd {
+        margin-top: 14px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+  @media #{$sp} {
+    padding: 20px 10px;
+    img {
+      margin: 0 20px 20px 0;
+    }
+    dl {
+      margin-left: 80px;
+      margin-top: -70px;
+      dd {
+        margin: 10px 0 20px -80px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media #{$pc} {
+  .sale-text {
+    padding: 36px 0 30px 60px;
+  }
+  .construction-text {
+    width: 100%;
+    text-align: right;
+    padding: 36px 60px 30px 0;
+  }
+}
+.service-name-en {
+  font-family: 'Bahnschrift';
+  @media #{$pc} {
+    font-size: 18px;
+  }
+  @media #{$sp} {
+    font-size: 16px;
+  }
+}
+.service-name-ja {
+  @media #{$pc} {
+    font-size: 27px;
+  }
+  @media #{$sp} {
+    font-size: 22px;
+  }
+}
+.more {
+  display: inline-block;
+  width: 120px;
+  padding: 4px 0;
+  text-align: center;
+  border: 1px solid $maincolor;
+}
+@media #{$pc} {
+  .sale-icon {
+    position: absolute;
+    left: -30px;
+  }
+  .construction-icon {
+    position: absolute;
+    right: -30px;
+  }
+}
+.information {
+  background-color: $maincolor;
+  @media #{$pc} {
+    margin-top: -12.5vh;
+    padding-top: 12.5vh;
+    padding-bottom: 6.25vh;
+  }
+  @media #{$sp} {
+    margin-top: 20px;
+    padding: 20px 3vw;
+  }
+}
+.information-area {
+  display: flex;
+  @media #{$pc} {
+    margin: 0 4.947vw;
+  }
+  @media #{$sp} {
+    flex-direction: column;
+  }
+}
+.information-title {
+  background-color: $textcolor;
+  color: $maincolor;
+  display: flex;
+  align-items: center;
+  span {
+    font-weight: bold;
+    font-size: 27px;
+  }
+  a {
+    color: $maincolor;
+  }
+  @media #{$pc} {
+    width: 15.625vw;
+    min-width: 140px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @media #{$sp} {
+    padding: 20px 10px;
+    justify-content: space-between;
+  }
+}
+.information-text {
+  background-color: $textcolor;
+  li {
+    border-top: 1px solid rgba(34, 32, 77, 0.15);
+    a {
+      color: $maincolor;
+    }
+  }
+  @media #{$pc} {
+    width: calc(100% - 15.625vw);
+    border-left: 1px solid rgba(34, 32, 77, 0.15);
+    li {
+      &:nth-child(even) {
+        background-color: rgba(34, 32, 77, 0.05);
+      }
+      a {
+        padding: 15px 5px 15px 0;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  @media #{$sp} {
+    li {
+      a {
+        display: block;
+        padding: 10px;
+      }
+    }
+  }
+}
+.information-date {
+  font-family: 'Bahnschrift';
+  font-size: 18px;
+  @media #{$pc} {
+    margin-left: 35px;
+    margin-right: 48px;
+  }
+  @media #{$sp} {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.about {
+  display: flex;
+  a {
+    color: $maincolor;
+    display: flex;
+    box-shadow: 0 0 15px rgba(34, 32, 77, 0.15);
+  }
+  @media #{$pc} {
+    margin: 60px 4.947vw 240px;
+    justify-content: space-between;
+    a {
+      width: 535px;
+      &:nth-child(odd) {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        margin-bottom: -30px;
+      }
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+  }
+  @media #{$sp} {
+    margin: 10px 0;
+    flex-direction: column;
+    a {
+      margin: 10px 3vw;
+      flex-direction: column-reverse;
+    }
+  }
+}
+.about-text {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  dt {
+    font-family: 'Bahnschrift';
+    margin-bottom: 8px;
+  }
+  dd {
+    font-size: 20px;
+  }
+}

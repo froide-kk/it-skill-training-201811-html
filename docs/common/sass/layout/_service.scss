@@ -1,0 +1,154 @@
+.service-nav {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+@media #{$pc} {
+  .service-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.service-container {
+  @media #{$pc} {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  a,
+  a:visited {
+    color: $maincolor;
+  }
+}
+
+.service-nav h2 {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+}
+
+// メインコンテンツ
+.item-electric {
+  border: 1px solid #cccccc;
+  max-width: 580px;
+
+  box-shadow: 0 0 2px #DCDCDC;
+  position: relative;
+
+  @media #{$pc} {
+    height: 500px;
+  }
+
+  @media #{$sp} {
+    height: 370px;
+    margin-bottom: 5px;
+  }
+
+  .s-btn {
+    font-family: AlteDIN1451Mittelschrift;
+  }
+}
+
+.item-electric-content {
+
+  img {
+    @media #{$pc} {
+      margin: 30px 0 0 30px;
+    }
+
+    @media #{$sp} {
+      margin-top: 10px;
+    }
+
+  }
+
+  dl {
+    margin-top: -50px;
+
+    @media #{$pc} {
+      margin-left: 100px;
+    }
+
+    @media #{$sp} {
+      margin-left: 80px;
+    }
+
+    dd {
+      margin: 30px 0 20px -70px;
+      line-height: 30px;
+    }
+  }
+}
+
+.electric-text {
+  font-family: HiraKakuPro-W3;
+}
+
+// フォント
+.contents-name-en {
+  font-family: 'Bahnschrift';
+  line-height: 10px;
+  color: $maincolor;
+  @media #{$pc} {
+    font-size: 18px;
+  }
+  @media #{$sp} {
+    font-size: 16px;
+  }
+}
+
+.contents-name-ja {
+  font-size: 27px;
+  color: $maincolor;
+}
+
+// リンクボタン
+.service-btn {
+  font-family: AlteDIN1451Mittelschrift;
+  width: 120px;
+  text-decoration: none;
+  border: 1px solid $maincolor;
+  background-color: white;
+  color: #1c1a3f;
+  padding-top: 5px;
+  padding-left: 30px;
+
+  @media #{$pc} {
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+
+  @media #{$sp} {
+    margin-left: 190px;
+    margin-top: -20px;
+  }
+}
+
+.fas {
+  font-weight: 900;
+}
+
+.electric-text {
+  br {
+    display: none;
+  }
+}

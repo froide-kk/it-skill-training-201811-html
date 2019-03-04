@@ -1,0 +1,227 @@
+/* ==================================
+  共通
+===================================== */
+.company-box {
+  display: flex;
+  color: $maincolor;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid rgba($maincolor, 0.05);
+}
+
+.company-font {
+  font-family: HiraKakuPro-W3;
+
+  p {
+    line-height: 30px;
+  }
+
+  table {
+    border-collapse: collapse;
+
+    tr {
+      border-top: 1px solid $maincolor;
+      border-bottom: 1px solid $maincolor;
+    }
+  }
+}
+
+/* ==================================
+  サブタイトル
+===================================== */
+.company-sub-title {
+  @media #{$pc} {
+    display: flex;
+    justify-content: flex-start;
+    height: 35px;
+    margin-top: 34px;
+    margin-bottom: 36px;
+  }
+
+  h2 {
+    @media #{$pc} {
+      font-size: 23px;
+      margin-right: 20px;
+    }
+
+    @media #{$sp} {
+      padding: 5px;
+    }
+
+    color: $maincolor;
+  }
+}
+
+//=====================================
+.philosophy-contents {
+  flex: auto;
+  width: 720px;
+  height: 300px;
+
+  p {
+    font-family: HiraKakuPro-W3;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: $maincolor;
+  }
+
+}
+
+.philosophy-contents-info {
+  width: 670px;
+
+  p {
+    font-size: 23px;
+  }
+}
+
+.philosophy-img {
+  flex: none;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.company-title {
+  font-family: HiraKakuPro-W3;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: $maincolor;
+  padding-top: 64px;
+}
+
+.philosophy-text {
+  max-width: 720px;
+  max-height: 183px;
+  font-family: HiraKakuPro-W3;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: $maincolor;
+  margin-top: 35px;
+
+  P {
+    width: 750px;
+  }
+}
+
+// 会社概要
+.company-contents {
+  padding-right: 15px;
+
+  th {
+    width: 135px;
+    vertical-align: top;
+    padding: 10px;
+    text-align: left;
+    padding-left: 5px;
+    
+  }
+
+  td {
+    width: 527px;
+    padding: 10px;
+  }
+}
+
+.company-contents-right {
+
+  th {
+    width: 125px;
+    vertical-align: top;
+    padding: 10px;
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  td {
+    width: 534px;
+    padding: 10px;
+  }
+
+  span {
+    font-size: 1px;
+  }
+}
+
+// 沿革・組織図
+.company-history {
+  height: 570px;
+}
+
+.company-history-left {
+
+  th {
+    width: 175px;
+    vertical-align: top;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  td {
+    width: 340px;
+    padding: 10px;
+  }
+}
+
+.organization-img {
+  flex: none;
+  width: 575px;
+  height: 355px;
+  object-fit: cover;
+}
+
+// 採用情報
+.company-background-image {
+  background-image: url(/common/images/recruit_bg.jpg);
+  height: 520px;
+  padding-top: 25px;
+}
+
+.company-bottom {
+  width: 580px;
+
+  p:first-child {
+    font-size: 23px;
+    margin-bottom: 35px;
+  }
+
+  p:last-child {
+    font-size: inherit;
+  }
+}
+
+// ボタン*/
+.company-btn {
+  width: 410px;
+  height: 65px;
+  font-size: 23px;
+  text-decoration: none;
+  border: solid 1px;
+  padding: 8px 24px;
+  background-color: $maincolor;
+  color: $textcolor;
+  border-radius: 30px;
+  // 縦方向中央揃え（Safari用含む）
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
